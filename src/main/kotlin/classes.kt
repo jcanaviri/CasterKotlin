@@ -5,6 +5,8 @@ class MyClass {
     }
 }
 
+data class Person(val name: String, val age: Int)
+
 fun main() {
     val instance = MyClass.create()
 
@@ -14,4 +16,8 @@ fun main() {
         this[index1] = this[index2]
         this[index2] = temp
     }
+
+    val john = Person("John", 67)
+    println(john)
+    println(john.name)
 }
