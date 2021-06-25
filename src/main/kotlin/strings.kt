@@ -1,7 +1,10 @@
 fun main() {
-    var fullName: String = "Josue Canaviri"
+    // The value store in there is a string
+    // so the ": String" is unnecesary
+    val fullName: String = "Josue Canaviri"
     println(fullName.length)
     println(fullName.decapitalize()) // removes the first upper letter
+
     val c: Char = 'x' // Single quotes is for characters
     val message: String = """This is a message
     with more lines""".trimMargin(">>>")

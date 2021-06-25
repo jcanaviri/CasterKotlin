@@ -1,5 +1,6 @@
-fun main(args: Array<String>) {
-    // var can change
+fun main() {
+    // The keyword var give us the
+    // ability to change the value store in there
     var name = "Josue"
     name = "Josue Miguel"
     println(name.isEmpty()) // False
@@ -9,6 +10,6 @@ fun main(args: Array<String>) {
     println(lastName)
 
     // We can set explicitly the type of variable
-    val fullName: String = "Josue Miguel Canaviri Martinez"
+    val fullName = "Josue Miguel Canaviri Martinez"
     println(fullName::class)
 }
