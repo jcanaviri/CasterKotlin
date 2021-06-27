@@ -2,6 +2,16 @@
 fun main(args: Array<String>) {
     println("Hello, World!")
 
+    // For loop
+    val list = listOf("A", "B", "C")
+    for (element in list) {
+        println(element)
+    }
+
+    // When expression
+    println(numberTypeName(1))
+    println(signAsString(0))
+
     println(sum(2, 4))
     println(sum2(5, 3))
 
@@ -26,3 +36,20 @@ fun sum(a: Int, b: Int): Int {
 
 // Single expression function
 fun sum2(a: Int, b: Int) = a + b
+
+// If statement
+fun bigger(a: Int, b: Int) = if (a > b) a else b
+
+fun numberTypeName(x: Number) = when(x) {
+    0 -> "Zero"
+    in 1..4 -> "Four or less"
+    5, 6, 7 -> "Five or six or seven"
+    is Byte -> "is a byte"
+    else -> "Some value"
+}
+
+fun signAsString(x: Int) = when {
+    x < 0 -> "Negative"
+    x == 0 -> "Zero"
+    else -> "Positive"
+}
